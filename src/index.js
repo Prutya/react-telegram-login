@@ -28,7 +28,7 @@ class TelegramLoginButton extends React.Component {
     script.setAttribute('data-userpic', !usePic);
     script.setAttribute('data-onauth', 'TelegramLoginWidget.dataOnauth(user)');
     
-    if (!!borderRadius) {
+    if (borderRadius !== undefined) {
       script.setAttribute('data-radius', borderRadius)
     }
     
